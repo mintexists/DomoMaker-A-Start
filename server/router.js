@@ -1,4 +1,3 @@
-const { countBy } = require('underscore')
 const controllers = require('./controllers')
 
 const router = (app) => {
