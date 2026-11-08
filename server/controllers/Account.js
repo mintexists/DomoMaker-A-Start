@@ -23,7 +23,7 @@ const login = (req, res) => {
 
   return Account.authenticate(username, pass, (err, account) => {
     if (err || !account) {
-      return res.status(401).json({ error: 'wrong username or password' })
+      return res.status(401).json({ error: 'Wrong username or password' })
     }
 
     return res.json({ redirect: '/maker' })
@@ -58,7 +58,7 @@ const signup = async (req, res) => {
 }
 
 module.exports = {
-  loginPage,
+  loginPage, 
   signupPage,
   login,
   logout,
